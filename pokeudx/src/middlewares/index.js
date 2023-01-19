@@ -4,7 +4,7 @@ export const logger = (store) => (next) => (action) => {
 }
 
 export const featuring = (store) => (next) => (actionInfo) => {
-    const featured = [{name: 'carlita'}, ...actionInfo.action.payload]
+    const featured = [ ...actionInfo.action.payload]
     const updatedActionInfo = {...actionInfo, action: {...actionInfo.action,payload: featured}}
     next(updatedActionInfo)
 }
