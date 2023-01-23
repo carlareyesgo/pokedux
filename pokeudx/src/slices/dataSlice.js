@@ -40,7 +40,7 @@ export const dataSlice = createSlice({
     },
 })
 
+
 export const {setFavorite, setPokemons} = dataSlice.actions;
-console.log("🚀 ~ file: dataSlice.js:44 ~ dataSlice", dataSlice)
 
 export default dataSlice.reducer;
